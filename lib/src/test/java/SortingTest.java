@@ -33,12 +33,16 @@ public class SortingTest {
     public void runQuickSort() {
 
         // given
-        QuickSort quickSort = new QuickSort(1, 4, 6, 7);
+        QuickSort quickSort = new QuickSort(5, 2, 4, 1, 3);
 
         // when
         Integer min = quickSort.removeMin();
 
         // then
         assertEquals(1, min);
+        assertEquals(2, min);
+        assertEquals(3, min);
+        assertEquals(4, min);
+        assertEquals(5, min);
     }
 }
