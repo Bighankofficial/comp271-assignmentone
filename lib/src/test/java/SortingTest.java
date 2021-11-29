@@ -28,4 +28,17 @@ public class SortingTest {
         assertEquals(4, sortedList[4]);
         assertEquals(5, sortedList[5]);
     }
+
+    @Test
+    public void runQuickSort() {
+
+        // given
+        QuickSort quickSort = new QuickSort(1, 4, 6, 7);
+
+        // when
+        Integer min = quickSort.removeMin();
+
+        // then
+        assertEquals(1, min);
+    }
 }
